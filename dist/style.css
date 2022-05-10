@@ -1,0 +1,80 @@
+html, body, div, span, h1, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+#content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+#content-left {
+  flex: 3;
+  background-color: pink;
+}
+
+#content-right {
+  flex: 2;
+  background-color: navajowhite;
+}
+
+.nav-bar {
+  height: 90px;
+  margin-top: 40px;
+  padding: 0 150px 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  background-color: powderblue;
+}
+
+.nav-bar ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+#logo-placeholder {
+  width: 90px;
+  height: 60px;
+  margin-right: 50px;
+  background-color: seagreen;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 50px 100px;
+}
+
+#hero h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#hero p {
+  font-size: 1.5rem;
+}
+
+#hero-image-placeholder {
+  width: 100%;
+  height: 400px;
+  background-color: seagreen;
+}
