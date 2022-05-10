@@ -78,3 +78,57 @@ html {
   height: 400px;
   background-color: seagreen;
 }
+
+#contact {
+  padding: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: repeat(2, fit-content);
+  border: 1px soid black;
+  gap: 40px;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-section .contact-header {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.contact-section span {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.contact-section .contact-subheader {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+#links {
+  flex-flow: row wrap;
+  align-content: center;
+  gap: 20px;
+}
+
+.section-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.contact-icon {
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+}

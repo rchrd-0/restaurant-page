@@ -7,7 +7,7 @@ function loadNavBar() {
   logo.setAttribute('id', 'logo-placeholder');
 
   const list = document.createElement('ul');
-  const links = ['About', 'Menu', 'Contact'];
+  const links = ['Menu', 'Contact'];
   for (let i = 0; i < links.length; i++) {
     let item = document.createElement('li');
     let anchor = document.createElement('a');
