@@ -83,17 +83,14 @@ html {
 }
 
 #contact {
-  padding: 200px;
-  display: grid;
-  grid-template-columns: repeat(2, 300px);
-  grid-template-rows: repeat(2, fit-content);
-  border: 1px soid black;
+  display: flex;
+  flex-wrap: wrap;
   gap: 40px;
-  justify-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .contact-section {
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
