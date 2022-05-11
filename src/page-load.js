@@ -1,7 +1,4 @@
-// import loadHero from "./hero";
 import loadNavBar from "./nav-bar";
-// import loadContact from "./contact";
-import loadMenu from "./menu";
 
 function pageLoad() {
   const main = document.querySelector('#content');
@@ -9,8 +6,6 @@ function pageLoad() {
 
   const contentLeft = document.createElement('div');
   contentLeft.setAttribute('id', 'content-left');
-  contentLeft.appendChild(loadNavBar());
-  contentLeft.appendChild(loadMenu());
   content.push(contentLeft);
 
   const contentRight = document.createElement('div');
@@ -18,6 +13,7 @@ function pageLoad() {
   content.push(contentRight);
 
   content.forEach(element => main.appendChild(element));
+  loadNavBar();
 }
 
 export default pageLoad;

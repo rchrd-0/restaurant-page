@@ -1,4 +1,5 @@
 function loadHero() {
+  const contentLeft = document.querySelector('#content-left');
   const hero = document.createElement('div');
   hero.setAttribute('id', 'hero');
 
@@ -16,7 +17,7 @@ function loadHero() {
   hero.appendChild(title);
   hero.appendChild(text);
 
-  return hero;
+  contentLeft.appendChild(hero);
 }
 
 export default loadHero;

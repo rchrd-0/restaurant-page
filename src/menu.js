@@ -1,4 +1,5 @@
 function loadMenu() {
+  const contentLeft = document.querySelector('#content-left');
   const menu = document.createElement('div');
   menu.setAttribute('id', 'menu');
   const heading = document.createElement('h1');
@@ -20,7 +21,7 @@ function loadMenu() {
     menu.appendChild(container);
   })
 
-  return menu;
+  contentLeft.appendChild(menu);
 }
 
 function getContent(div) {

@@ -1,4 +1,5 @@
 function loadContact() {
+  const contentLeft = document.querySelector('#content-left');
   let contact = document.createElement('div');
   contact.setAttribute('id', 'contact');
 
@@ -13,7 +14,7 @@ function loadContact() {
   }
   insertContent(cards);
 
-  return contact;
+  contentLeft.appendChild(contact);
 }
 
 function insertContent(sections) {
