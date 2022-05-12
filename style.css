@@ -64,7 +64,21 @@ a:active {
 
 #content-right {
   flex: 2;
-  background-color: navajowhite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.2s ease;
+}
+
+#content-right[data-page-image='hero'] {
+  background-image: url('./assets/hero-right.jpg');
+}
+
+#content-right[data-page-image='menu'] {
+  background-image: url('./assets/menu-right.jpg');
+}
+
+#content-right[data-page-image='contact'] {
+  background-image: url('./assets/contact-right.jpg');
 }
 
 #nav-bar {
