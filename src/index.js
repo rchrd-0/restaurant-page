@@ -7,6 +7,7 @@ import loadHero from "./hero";
 function initialize() {
   pageLoad();
   loadHero();
+  loadImage('hero');
 
   const navBar = document.querySelector('#nav-bar')
   const navLinks = navBar.querySelectorAll('a');
@@ -22,17 +23,24 @@ function loadTab(tab) {
   }
   toggleNavClass(tab);
   switch (tab) {
-    default: 
     case 'home':
       loadHero();
+      loadImage('hero');
       break;
     case 'menu':
       loadMenu();
+      loadImage(tab)
       break;
     case 'contact':
       loadContact();
+      loadImage(tab);
       break;
   }
+}
+
+function loadImage(page) {
+    const contentRight = document.querySelector('#content-right');
+    contentRight.dataset.pageImage = page;
 }
 
 // Event listeners

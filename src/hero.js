@@ -16,7 +16,7 @@ function loadHero() {
   contentLeft.appendChild(hero);
 }
 
-const loadHeaders = () => {
+function loadHeaders() {
   const container = document.createElement('div');
   container.classList.add('header-container');
   const lines = ['Hypothetical restaurant;', 'nonsense menu;', 'good vibes all round;'];
