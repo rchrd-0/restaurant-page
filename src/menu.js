@@ -7,20 +7,20 @@ function loadMenu() {
   menu.appendChild(heading);
   
   const menuSections = ['meat', 'seafood', 'salad', 'sides'];
-  menuSections.forEach(section => {
+  for (let i = 0; i < menuSections.length; i++) {
     const container = document.createElement('div');
     container.classList.add('menu-section');
-    container.dataset.menu = section;
+    container.dataset.menu = menuSections[i];
     const sectionHeader = document.createElement('h2');
-    sectionHeader.textContent = section.toUpperCase();
+    let textColor = (i % 2 === 0) ? 'text-primary-1' : 'text-primary-2';
+    sectionHeader.classList.add(textColor);
+    sectionHeader.textContent = menuSections[i].toUpperCase();
     container.appendChild(sectionHeader);
-
     let content = getContent(container);
     content.forEach(item => container.appendChild(item));
-    
     menu.appendChild(container);
-  })
 
+  }
   contentLeft.appendChild(menu);
 }
 
@@ -28,12 +28,12 @@ function getContent(div) {
   const allContent = {
     meat: [
       'Hong Kong-style sand ginger chicken, house-made scallion sauce',
-      'Lamb chops, laccha onion',
+      'Lamb shank, laccha onion',
       'Roast duck, hoisin sauce, steamed pancakes',
-      'Australian Wagyu skirt steak, thick-cut rice noodles, seaweed butter, preserved lemon'
+      'Australian Wagyu sirloin, rice noodles, seaweed butter, salty lime'
     ],
     seafood: [
-      'Tiger prawn noodles, soy butter sauce, prawn oil, dried shrimp roe',
+      'Tiger prawn noodles, miso butter sauce, dried shrimp roe',
       'Eel on crispy sushi rice & pickles',
       'Cobia, sapphire chutney, lime caviar',
       'Grilled lobster, green mango, pineapple & lime vinaigrette'
