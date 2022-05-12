@@ -1,4 +1,4 @@
-import loadNavBar from "./nav-bar";
+import { loadNavBar } from "./nav-bar";
 
 function pageLoad() {
   const main = document.querySelector('#content');
